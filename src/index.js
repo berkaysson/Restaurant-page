@@ -1,3 +1,5 @@
+import loadHome from "./home";
+
 function createHeader() {
     const header = document.createElement("header");
     
@@ -31,7 +33,8 @@ function createNavMenu() {
 
 function createMain() {
     const main = document.createElement("main");
-
+    main.classList.add("main");
+    main.setAttribute("id", "main");
     return main;
 }
 
@@ -46,6 +49,8 @@ function initWebsite(){
     content.appendChild(createHeader());
     content.appendChild(createMain());
     // content.appendChild(createFooter());
+
+    loadHome();
 }
 
 
