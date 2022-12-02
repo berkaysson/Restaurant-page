@@ -16,14 +16,14 @@ function createNavMenu() {
     const home_button = document.createElement("button");
     home_button.textContent = "Home";
 
-    const about_button = document.createElement("button");
-    about_button.textContent = "About";
+    const menu_button = document.createElement("button");
+    menu_button.textContent = "Menu";
 
     const contact_button = document.createElement("button");
     contact_button.textContent = "Contact";
 
     nav_menu.appendChild(home_button);
-    nav_menu.appendChild(about_button);
+    nav_menu.appendChild(menu_button);
     nav_menu.appendChild(contact_button);
     
     return nav_menu
