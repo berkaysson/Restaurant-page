@@ -15,13 +15,13 @@ function createHeader() {
 function createNavMenu() {
     const nav_menu = document.createElement("nav");
 
-    const home_button = document.createElement("button");
+    const home_button = document.createElement("a");
     home_button.textContent = "Home";
 
-    const menu_button = document.createElement("button");
+    const menu_button = document.createElement("a");
     menu_button.textContent = "Menu";
 
-    const contact_button = document.createElement("button");
+    const contact_button = document.createElement("a");
     contact_button.textContent = "Contact";
 
     nav_menu.appendChild(home_button);

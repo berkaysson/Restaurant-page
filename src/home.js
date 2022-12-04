@@ -12,10 +12,12 @@ function createHome() {
 
     const order_button = document.createElement("button");
     order_button.textContent = "Order Now";
+    order_button.setAttribute("class", "btn");
     
     hero_container.appendChild(hero);
     hero_container.appendChild(hero_sl);
     hero_container.appendChild(order_button);
+    hero_container.setAttribute("class", "hero");
 
     const info_container = document.createElement("div");
 
@@ -43,6 +45,7 @@ function createHome() {
 
     info_container.appendChild(adress_container);
     info_container.appendChild(time_container);
+    info_container.setAttribute("class", "info");
 
     home.appendChild(hero_container);
     home.appendChild(info_container);
