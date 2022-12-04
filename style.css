@@ -1,0 +1,84 @@
+:root {
+    --dark-color: #0e79b2;               /*font color*/
+    --secondary-color: #29335c;          /*hover effect or weak font color*/
+    --light-color: #ece90d;
+    --background-color: #f1f7ed;
+    --danger-color: #ef233be3;
+    --unactive-danger-color: #ef233b63;
+
+    --gap: 0.5rem;
+    --padding: 1rem;
+    --padding-sl: 0.4rem;
+    --padding-lg:3rem;
+    --btn-padding: 0.6rem;
+    --margin: 1.2rem;
+
+    --border-radius:5px;
+
+    --font-lg: 1.5rem;
+    --font-xlg: 4rem;
+    --font-sl: 0.8rem;
+    --font-md: 1.1rem;
+
+    --transition-size:width 0.2s ease-in;
+}
+
+/* Main Styles */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--dark-color);
+}
+
+p {
+    font-size: var(--font-md);
+}
+
+h1 {
+    font-size: var(--font-xlg);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    font-size: var(--font-md);
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+i {
+    font-size: var(--font-lg);
+}
+
+header {
+    width: 100%;
+    padding: var(--padding);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+}
