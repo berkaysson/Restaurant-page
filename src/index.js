@@ -6,7 +6,7 @@ function createHeader() {
     const header = document.createElement("header");
     
     const title_header = document.createElement("h1");
-    title_header.textContent = "Restaurant Page";
+    title_header.textContent = "COFFEE SHOP";
 
     header.appendChild(title_header);
     header.appendChild(createNavMenu());
