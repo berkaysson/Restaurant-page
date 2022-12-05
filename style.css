@@ -1,24 +1,21 @@
 :root {
-    --dark-color: #0e79b2;               /*font color*/
-    --secondary-color: #29335c;          /*hover effect or weak font color*/
-    --light-color: #ece90d;
-    --background-color: #f1f7ed;
-    --danger-color: #ef233be3;
-    --unactive-danger-color: #ef233b63;
+    --dark-color: #090302;               /*font color*/
+    --secondary-color: #c8bfc7;          /*hover effect or weak font color*/
+    --light-color: #8a7e72;
 
-    --gap: 1rem;
-    --padding: 1rem;
-    --padding-sl: 0.4rem;
-    --padding-lg:3rem;
-    --btn-padding: 0.6rem;
-    --margin: 1.2rem;
+    --gap: 1.2rem;
+    --padding: 1.2rem;
+    --padding-sl: 0.6rem;
+    --padding-lg:4rem;
+    --btn-padding: 0.7rem;
+    --margin: 1.3rem;
 
-    --border-radius:5px;
+    --border-radius:2px;
 
-    --font-lg: 1.5rem;
-    --font-xlg: 4rem;
-    --font-sl: 0.8rem;
-    --font-md: 1.1rem;
+    --font-lg: 1.7rem;
+    --font-xlg: 4.2rem;
+    --font-sl: 0.9rem;
+    --font-md: 1.2rem;
 
     --transition-size:width 0.2s ease-in;
 }
@@ -39,8 +36,15 @@ html {
 }
 
 body {
-    background-color: var(--background-color);
     color: var(--dark-color);
+    background-image:linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.6)
+      ),  url("images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -71,7 +75,6 @@ i {
 }
 
 header {
-    width: 100%;
     padding: var(--padding);
     text-align: center;
 }
@@ -99,6 +102,8 @@ nav>a {
     opacity: 0.8;
     font-size: var(--font-lg);
     text-align: center;
+    border-bottom: solid 4px var(--dark-color);
+    transition: border-color 0.3s ease-in-out;
 }
 
 nav>a:hover {
@@ -137,6 +142,8 @@ nav>.active:hover {
     gap: var(--gap);
     padding: var(--padding);
     margin-top: 3rem;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
 }
 
 .info>div {
@@ -166,11 +173,11 @@ nav>.active:hover {
     border: var(--light-color) 2px solid;
     border-radius: var(--border-radius);
     background-color: var(--secondary-color);
-    transition: transform 0.5s;
+    transition: transform 0.3s ease-out;
 }
 
 .menu-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
