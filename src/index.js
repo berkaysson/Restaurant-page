@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu";
 
 function createHeader() {
     const header = document.createElement("header");
@@ -59,6 +60,17 @@ function activePage(link_ID) {
         }
         else if (link_ID == link.id) {
             link.classList.add("class", "active");
+            if (link_ID == "Home") {
+                loadHome();
+            }
+
+            else if (link_ID == "Menu") {
+                loadMenu();
+            }
+
+            else {
+                loadContact();
+            }
         }
     })
 }
