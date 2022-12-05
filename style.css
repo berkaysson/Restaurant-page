@@ -54,6 +54,7 @@ h1 {
 a {
     text-decoration: none;
     cursor: pointer;
+    user-select: none;
 }
 
 button {
@@ -109,6 +110,12 @@ nav>.active {
     opacity:1;
 }
 
+nav>.active:hover {
+    opacity: 1;
+}
+
+/* ---HOME--- */
+
 /* HERO */
 
 .hero {
@@ -135,6 +142,42 @@ nav>.active {
 .info>div {
     display: flex;
     gap: var(--gap);
+}
+
+/* ---MENU--- */
+
+#menu{
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px ;
+    gap: var(--gap);
+    border: var(--light-color) 2px solid;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    transition: transform 0.5s;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#menu>.menu-item>img {
+    height: auto;
+    width: 25%;
+    min-width: 100px;
 }
 
 /* MODULE */
